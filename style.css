@@ -1,0 +1,31 @@
+.m1{
+    text-align: center;
+    border: solid;
+    border-color: rgb(225, 104, 12);
+    border-radius: 15px;
+    padding: 2px;
+    background-size: 2px;
+    background-color: rgb(21, 190, 228);
+    margin: 10px;
+}
+
+.header{
+    border: solid;
+    background-color: aquamarine;
+
+}
+div{
+    text-align: center;
+    margin: 10px;
+    padding: 5px; 
+    border-radius: 18px;  
+
+}
+.wrapper{
+    border: solid;
+    background-color: antiquewhite;
+}
+.singup{
+    border: solid;
+    background-color: antiquewhite;
+}

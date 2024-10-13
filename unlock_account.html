@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Unlock Account</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Account Locked</h2>
+        <p>Your account has been locked due to multiple failed login attempts.</p>
+        <p>Please confirm your phone number to unlock your account.</p>
+        <form action="/unlock-account" method="POST">
+            <div class="form-group">
+                <label>Phone:</label>
+                <input type="text" class="form-control" name="phone" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Unlock Account</button>
+        </form>
+        <br>
+        <p>If you want to reset your password, <a href="/reset-password">click here</a>.</p>
+    </div>
+</body>
+</html>

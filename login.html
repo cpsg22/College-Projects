@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='student.jpg') }}">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+        }
+        .login-container {
+            width: 100%;
+            max-width: 360px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .btn-login {
+            background-color: #1877f2;
+            color: white;
+        }
+        .btn-login:hover {
+            background-color: #155bb5;
+        }
+        .btn-create-account {
+            background-color: #42b72a;
+            color: white;
+            margin-top: 10px;
+        }
+        .btn-create-account:hover {
+            background-color: #369c23;
+        }
+        .forgot-password {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #1877f2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <form method="POST" action="/login">
+            <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="Email or phone number" required aria-label="Email or phone number">
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="Password" required aria-label="Password">
+            </div>
+            <button type="submit" class="btn btn-login btn-block">Log In</button>
+        </form>
+        <a href="/forgot-password" class="forgot-password">Forgot password?</a>
+        <hr>
+        <a href="/signup" class="btn btn-create-account btn-block">Create new account</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
